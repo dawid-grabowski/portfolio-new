@@ -2,7 +2,7 @@
 
 ![alt text]('./../public/baner.png')
 
-![AUR last modified](https://img.shields.io/aur/last-modified/https://github.com/dawid-grabowski/portfolio-new)
+![AUR last modified](https://img.shields.io/aur/last-modified/dawid-grabowski/portfolio-new)
 
 ## Description
 
