@@ -1,9 +1,11 @@
+import Navbar from './components/Navbar';
+
 const App = () => {
 	return (
-		<div className="App">
-			Welcome.
+		<div className='App'>
+			<Navbar />
 		</div>
 	);
-}
+};
 
 export default App;
