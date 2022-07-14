@@ -4,7 +4,6 @@ export const NavbarWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: none;
 	padding: 3rem 7rem;
 	font-size: 1.6rem;
 
@@ -22,7 +21,7 @@ export const ListWrapper = styled.div`
 
 		a {
 			text-decoration: none;
-			color: #faf8ff;
+			color: ${props => props.theme.fontColor};
 		}
 
 		a:hover {
