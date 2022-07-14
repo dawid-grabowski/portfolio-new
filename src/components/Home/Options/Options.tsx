@@ -2,14 +2,12 @@ import { OptionsWrapper } from './Options.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-regular-svg-icons';
 import { faLanguage, faSun } from '@fortawesome/free-solid-svg-icons';
-import { themeModes } from '../../enums/themeModes';
+import { themeModes } from '../../../enums/themeModes';
+import { useTheme } from '../../../hooks/ThemeContext';
 
-interface IOptionsProps {
-	handleThemeChange: () => void;
-	currentTheme: string;
-}
+const Options = () => {
+	const { currentTheme, handleThemeChange } = useTheme();
 
-const Options = ({ handleThemeChange, currentTheme }: IOptionsProps) => {
 	return (
 		<OptionsWrapper currentTheme={currentTheme}>
 			<button onClick={handleThemeChange}>

@@ -1,11 +1,14 @@
 import React from 'react';
+import { useTheme } from '../../hooks/ThemeContext';
 import { NavbarWrapper, ListWrapper } from './Navbar.styled';
 
 const Navbar = () => {
+	const { currentTheme } = useTheme();
+
 	return (
-		<NavbarWrapper>
+		<NavbarWrapper currentTheme={currentTheme}>
 			<span>dawid_grabowski</span>
-			<ListWrapper>
+			<ListWrapper currentTheme={currentTheme}>
 				<li>
 					<a href='#home'>home</a>
 				</li>
