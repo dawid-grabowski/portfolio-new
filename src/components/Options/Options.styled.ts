@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { themeModes } from '../../enums/themeModes';
 
 interface IOptionsWrapperProps {
 	currentTheme: string;
@@ -17,8 +18,9 @@ export const OptionsWrapper = styled.div`
 
 	button {
 		background: none;
-		border: 1px solid ${(props: IOptionsWrapperProps) => (props.currentTheme === 'dark' ? '#171717' : '#faf8ff')};
-		color: ${(props: IOptionsWrapperProps) => (props.currentTheme === 'dark' ? '#171717' : '#faf8ff')};
+		border: 1px solid
+			${(props: IOptionsWrapperProps) => (props.currentTheme === themeModes.dark ? '#171717' : '#faf8ff')};
+		color: ${(props: IOptionsWrapperProps) => (props.currentTheme === themeModes.dark ? '#171717' : '#faf8ff')};
 		height: 45%;
 		width: 45%;
 		transition: 0.3s background-color ease-out, 0.3s color ease-out;
@@ -26,7 +28,8 @@ export const OptionsWrapper = styled.div`
 	}
 
 	button:hover {
-		background-color: ${(props: IOptionsWrapperProps) => (props.currentTheme === 'dark' ? '#171717' : '#faf8ff')};
-		color: ${(props: IOptionsWrapperProps) => (props.currentTheme === 'dark' ? '#faf8ff' : '#171717')};
+		background-color: ${(props: IOptionsWrapperProps) =>
+			props.currentTheme === themeModes.dark ? '#171717' : '#faf8ff'};
+		color: ${(props: IOptionsWrapperProps) => (props.currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
 	}
 `;
