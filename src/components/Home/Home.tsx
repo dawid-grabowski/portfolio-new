@@ -1,4 +1,3 @@
-import React from 'react';
 import { HomeWrapper } from './Home.styled';
 import AboutMe from './AboutMe/AboutMe';
 import Options from './Options/Options';

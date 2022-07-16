@@ -3,13 +3,14 @@ import { themeModes } from '../../../enums/themeModes';
 import { IThemeProps } from '../../../interface/ITheme';
 
 export const OptionsWrapper = styled.div`
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
-	position: absolute;
 	top: 50%;
 	right: 0;
+	transform: translateY(-50%);
 	width: 8rem;
 	height: 8rem;
 

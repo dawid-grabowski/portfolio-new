@@ -3,7 +3,7 @@ import { themeModes } from '../../../enums/themeModes';
 import { IThemeProps } from '../../../interface/ITheme';
 
 export const AboutMeWrapper = styled.div`
-	max-width: 42rem;
+	max-width: 40rem;
 	line-height: 1.9;
 	border: 1px solid ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
 	border-radius: 5px;
