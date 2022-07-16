@@ -1,5 +1,5 @@
 import Page from './components/Page';
-import { ThemeProvider } from './hooks/ThemeContext';
+import { ThemeProvider } from './hooks/useTheme';
 
 const App = () => {
 	return (

@@ -16,16 +16,16 @@ export const OptionsWrapper = styled.div`
 	button {
 		background: none;
 		border-radius: 4px;
-		border: 1px solid ${(props: IThemeProps) => (props.currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
-		color: ${(props: IThemeProps) => (props.currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+		border: 1px solid ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
 		height: 45%;
 		width: 45%;
-		transition: 0.3s background-color ease-out, 0.3s color ease-out;
+		transition: 0.3s background-color ease-out, 0.3s color ease-out, 0.3s border ease-out;
 		cursor: pointer;
 	}
 
 	button:hover {
-		background-color: ${(props: IThemeProps) => (props.currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
-		color: ${(props: IThemeProps) => (props.currentTheme === themeModes.dark ? '#171717' : '#faf8ff')};
+		background-color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#171771' : '#faf8ff')};
 	}
 `;

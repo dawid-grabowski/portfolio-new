@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../../hooks/ThemeContext';
+import { useTheme } from '../../hooks/useTheme';
 import { NavbarWrapper, ListWrapper } from './Navbar.styled';
 
 const Navbar = () => {

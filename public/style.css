@@ -11,4 +11,11 @@
 html {
 	font-family: 'JetBrains Mono', monospace;
 	font-size: 62.5%;
+	background-color: #171717;
+}
+
+button,
+input,
+textarea {
+	font-family: 'JetBrains Mono', monospace;
 }
