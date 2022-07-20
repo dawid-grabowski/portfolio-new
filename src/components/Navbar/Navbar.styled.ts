@@ -11,8 +11,9 @@ export const NavbarWrapper = styled.div`
 	align-items: center;
 	padding: 3rem 7rem;
 	font-size: 1.6rem;
-	background-color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#171717' : '#faf8ff')};
-	color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+	background-color: ${({ currentTheme }: IThemeProps) =>
+		currentTheme === themeModes.dark ? '#171717' : 'hsl(210, 36%, 96%)'};
+	color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : 'hsl(209, 61%, 16%)')};
 	transition: 0.3s background-color ease-out, 0.3s color ease-out;
 
 	span {
@@ -29,7 +30,8 @@ export const ListWrapper = styled.div`
 
 		a {
 			text-decoration: none;
-			color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+			color: ${({ currentTheme }: IThemeProps) =>
+				currentTheme === themeModes.dark ? '#faf8ff' : 'hsl(209, 61%, 16%)'};
 			transition: 0.3s color ease-out;
 		}
 

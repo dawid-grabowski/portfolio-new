@@ -18,7 +18,7 @@ export const OptionsWrapper = styled.div`
 		background: none;
 		border-radius: 4px;
 		border: 1px solid ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
-		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : 'hsl(209, 61%, 16%)')};
 		height: 45%;
 		width: 45%;
 		transition: 0.3s background-color ease-out, 0.3s color ease-out, 0.3s border ease-out;
@@ -26,7 +26,8 @@ export const OptionsWrapper = styled.div`
 	}
 
 	button:hover {
-		background-color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
-		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#171771' : '#faf8ff')};
+		background-color: ${({ currentTheme }: IThemeProps) =>
+			currentTheme === themeModes.dark ? 'hsl(210, 36%, 96%)' : '#171717'};
+		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? 'hsl(209, 61%, 16%)' : '#faf8ff')};
 	}
 `;

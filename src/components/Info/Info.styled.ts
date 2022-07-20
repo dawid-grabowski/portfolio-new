@@ -8,7 +8,7 @@ export const InfoWrapper = styled.div`
 	flex-direction: row;
 	min-height: 100vh;
 	width: 100%;
-	color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+	color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : 'hsl(209, 61%, 16%)')};
 	transition: 0.3s color ease-out;
 
 	.info__panel {
@@ -34,7 +34,8 @@ export const InfoWrapper = styled.div`
 		}
 
 		a {
-			color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+			color: ${({ currentTheme }: IThemeProps) =>
+				currentTheme === themeModes.dark ? '#faf8ff' : 'hsl(209, 61%, 16%)'};
 			text-decoration: none;
 			transition: 0.3s color ease-out;
 		}
@@ -47,7 +48,8 @@ export const InfoWrapper = styled.div`
 	.info__separator {
 		width: 1px;
 		height: 60vh;
-		background-color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+		background-color: ${({ currentTheme }: IThemeProps) =>
+			currentTheme === themeModes.dark ? 'hsl(210, 36%, 96%)' : '#171717'};
 		transition: 0.3s background-color ease-out;
 	}
 `;

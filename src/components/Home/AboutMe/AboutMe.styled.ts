@@ -26,7 +26,7 @@ export const AboutMeWrapper = styled.div`
 		border-bottom: 1px solid
 			${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
 		font-size: 1.2rem;
-		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : '#171717')};
+		color: ${({ currentTheme }: IThemeProps) => (currentTheme === themeModes.dark ? '#faf8ff' : 'hsl(209, 61%, 16%)')};
 		text-decoration: none;
 		cursor: pointer;
 		transition: 0.3s border ease-out, 0.3s border-bottom ease-out, 0.3s color ease-out;
