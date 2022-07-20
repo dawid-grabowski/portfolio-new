@@ -6,6 +6,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Info = () => {
 	const { currentTheme } = useTheme();
+
 	return (
 		<InfoWrapper currentTheme={currentTheme}>
 			<div className='info__panel'>
@@ -14,7 +15,14 @@ const Info = () => {
 				</h1>
 				<div>
 					<p>
-						<FaLinkedin /> -&nbsp;
+						<a
+							href='https://www.linkedin.com/in/grabowskidawid/'
+							target='_blank'
+							rel='noreferrer'
+							title='Click to visit my linkedIn'>
+							<FaLinkedin />
+						</a>
+						&nbsp;-&nbsp;
 						<a
 							href='https://www.linkedin.com/in/grabowskidawid/'
 							target='_blank'
@@ -24,7 +32,14 @@ const Info = () => {
 						</a>
 					</p>
 					<p>
-						<FaGithub /> -&nbsp;
+						<a
+							href='https://github.com/dawid-grabowski'
+							target='_blank'
+							rel='noreferrer'
+							title='Click to visit my github'>
+							<FaGithub />
+						</a>
+						&nbsp;-&nbsp;
 						<a
 							href='https://github.com/dawid-grabowski'
 							target='_blank'
