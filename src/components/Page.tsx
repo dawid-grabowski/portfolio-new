@@ -22,6 +22,8 @@ const Page = () => {
 		}, 2000);
 	}, []);
 
+	document.body.style.backgroundColor = currentTheme === themeModes.dark ? '#171717' : 'hsl(210, 36%, 96%)';
+
 	useEffect(() => {
 		if (!isLoading) {
 			setOpacityValue(1);
