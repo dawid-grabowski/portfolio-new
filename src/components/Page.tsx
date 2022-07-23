@@ -12,7 +12,10 @@ const Page = () => {
 	const [opacityValue, setOpacityValue] = useState<number>(0);
 	const [loaderOpacityValue, setLoaderOpacityValue] = useState<number>(0);
 
-	const { currentTheme } = useTheme();
+	const { currentTheme, handleThemeChangeLocal } = useTheme();
+
+	document.body.style.backgroundColor = currentTheme === themeModes.dark ? '#171717' : 'hsl(210, 36%, 96%)';
+
 
 	useEffect(() => {
 		setLoaderOpacityValue(1);
@@ -22,7 +25,15 @@ const Page = () => {
 		}, 2000);
 	}, []);
 
-	document.body.style.backgroundColor = currentTheme === themeModes.dark ? '#171717' : 'hsl(210, 36%, 96%)';
+	useEffect(() => {
+		if (!localStorage.getItem('currentTheme')) return;
+
+		const storageTheme = localStorage.getItem('currentTheme')
+
+		if (handleThemeChangeLocal && storageTheme !== null) {
+			handleThemeChangeLocal(storageTheme);
+		}
+	}, [currentTheme, handleThemeChangeLocal]);
 
 	useEffect(() => {
 		if (!isLoading) {
