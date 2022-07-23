@@ -55,7 +55,7 @@ const Page = () => {
 		<PageWrapper currentTheme={currentTheme}>
 			{isLoading ? (
 				<ClimbingBoxLoader
-					color={currentTheme === themeModes.dark ? '#faf8ff' : 'hsl(209, 61%, 16%)'}
+					color={'#9013FE'}
 					loading={isLoading}
 					cssOverride={loaderStyles}
 				/>

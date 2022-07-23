@@ -24,14 +24,29 @@ export const InfoWrapper = styled.div`
 		}
 
 		h1 {
+			position: relative;
 			font-size: 3.6rem;
 			margin-bottom: 2rem;
+			z-index: 1;
 			cursor: default;
 		}
 
+		h1::after {
+			content: '';
+			position: absolute;
+			top: -15px;
+			left: -15px;
+			border: 2px solid #9013fe;
+			width: 230px;
+			height: 70px;
+			z-index: -1;
+		}
+
 		p {
+			position: relative;
 			font-size: 1.6rem;
 			margin-bottom: 1rem;
+			z-index: 1;
 			cursor: default;
 		}
 

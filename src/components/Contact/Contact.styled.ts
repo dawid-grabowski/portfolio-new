@@ -72,13 +72,12 @@ export const ContactWrapper = styled.div`
 
   .line {
 		position: absolute;
-		background-color: gray;
+		background-color: #9013FE;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
 		height: 28rem;
 		width: 28rem;
-		opacity: 0.2;
 		z-index: 3;
 		transition: 0.3s background-color ease-out;
 	}
@@ -90,8 +89,8 @@ export const ContactWrapper = styled.div`
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
-		height: 27.5rem;
-		width: 27.5rem;
+		height: 27.8rem;
+		width: 27.8rem;
 		z-index: 3;
 		transition: 0.3s background-color ease-out;
 	}
