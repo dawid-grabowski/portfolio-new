@@ -26,11 +26,13 @@ export const InfoWrapper = styled.div`
 		h1 {
 			font-size: 3.6rem;
 			margin-bottom: 2rem;
+			cursor: default;
 		}
 
 		p {
 			font-size: 1.6rem;
 			margin-bottom: 1rem;
+			cursor: default;
 		}
 
 		a {

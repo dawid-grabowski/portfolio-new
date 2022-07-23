@@ -7,6 +7,7 @@ import Navbar from './Navbar/Navbar';
 import Info from './Info/Info';
 import { themeModes } from '../enums/themeModes';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 const Page = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -16,7 +17,6 @@ const Page = () => {
 	const { currentTheme, handleThemeChangeLocal } = useTheme();
 
 	document.body.style.backgroundColor = currentTheme === themeModes.dark ? '#171717' : 'hsl(210, 36%, 96%)';
-
 
 	useEffect(() => {
 		setLoaderOpacityValue(1);
@@ -29,7 +29,7 @@ const Page = () => {
 	useEffect(() => {
 		if (!localStorage.getItem('currentTheme')) return;
 
-		const storageTheme = localStorage.getItem('currentTheme')
+		const storageTheme = localStorage.getItem('currentTheme');
 
 		if (handleThemeChangeLocal && storageTheme !== null) {
 			handleThemeChangeLocal(storageTheme);
@@ -65,6 +65,7 @@ const Page = () => {
 					<Home />
 					<Info />
 					<Contact />
+					<Footer />
 				</div>
 			)}
 		</PageWrapper>

@@ -12,11 +12,13 @@ export const AboutMeWrapper = styled.div`
 
 	h1 {
 		font-size: 3.6rem;
+		cursor: default;
 	}
 
 	p {
 		font-size: 1.6rem;
 		margin: 10px 0 20px 0;
+		cursor: default;
 	}
 
 	a {
