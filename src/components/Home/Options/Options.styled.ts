@@ -13,6 +13,7 @@ export const OptionsWrapper = styled.div`
 	transform: translateY(-50%);
 	width: 8rem;
 	height: 8rem;
+	z-index: 100;
 
 	button {
 		background: none;

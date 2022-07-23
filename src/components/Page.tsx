@@ -6,6 +6,7 @@ import Home from './Home/Home';
 import Navbar from './Navbar/Navbar';
 import Info from './Info/Info';
 import { themeModes } from '../enums/themeModes';
+import Contact from './Contact/Contact';
 
 const Page = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -63,6 +64,7 @@ const Page = () => {
 					<Navbar />
 					<Home />
 					<Info />
+					<Contact />
 				</div>
 			)}
 		</PageWrapper>
